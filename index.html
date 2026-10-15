@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angel Villanueva</title>
+  <meta name="description" content="Angel Villanueva — PhD in Mathematics, data scientist and AI systems developer. Doctor en Matemáticas, científico de datos y desarrollador de sistemas de IA.">
+  <meta property="og:title" content="Angel Villanueva">
+  <meta property="og:description" content="PhD in Mathematics · Data Scientist · AI Systems Developer">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EAV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="wrap topbar-inner" aria-label="Secciones">
+      <a class="brand" href="#top">AV</a>
+      <ul class="nav-links">
+        <li><a href="#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#research" data-i18n="nav.research"></a></li>
+        <li><a href="#education" data-i18n="nav.education"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <h1 id="name"></h1>
+      <p class="headline" id="headline"></p>
+      <p class="location" id="location"></p>
+      <p class="summary" id="summary"></p>
+      <div class="cta" id="links"></div>
+    </section>
+
+    <section id="experience">
+      <h2 data-i18n="nav.experience"></h2>
+      <div id="experience-groups"></div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="nav.projects"></h2>
+      <div class="cards" id="project-list"></div>
+    </section>
+
+    <section id="research">
+      <h2 data-i18n="nav.research"></h2>
+      <h3 data-i18n="publications"></h3>
+      <ol class="pubs" id="publication-list"></ol>
+      <details class="more">
+        <summary data-i18n="talks"></summary>
+        <ul class="plain" id="talk-list"></ul>
+      </details>
+    </section>
+
+    <section id="education">
+      <h2 data-i18n="nav.education"></h2>
+      <div id="education-list"></div>
+      <div class="two-col">
+        <div>
+          <h3 data-i18n="skills"></h3>
+          <div id="skill-list"></div>
+        </div>
+        <div>
+          <h3 data-i18n="awards"></h3>
+          <ul class="plain" id="award-list"></ul>
+          <h3 data-i18n="languages"></h3>
+          <ul class="plain" id="language-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 data-i18n="nav.contact"></h2>
+      <p data-i18n="contactText"></p>
+      <div class="cta" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span id="year"></span> · Angel Villanueva
+  </footer>
+
+  <noscript><p class="wrap">Este sitio necesita JavaScript. / This site requires JavaScript.</p></noscript>
+  <script src="assets/content.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
