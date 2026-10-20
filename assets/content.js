@@ -179,6 +179,16 @@ window.CONTENT = {
   // Proyectos personales. `tags` son tecnologías; `repo` y `demo` son opcionales.
   projects: [
     {
+      title: { es: "Market History", en: "Market History" },
+      description: {
+        es: "Historia de largo plazo de los mercados y la economía: rendimientos año por año de los principales índices, bonos, commodities, Bitcoin, Ethereum y sectores de EE.UU., contra inflación, tasas, desempleo y recesiones. Datos actualizados automáticamente.",
+        en: "A long-run history of markets and the economy: calendar-year returns for major indices, bonds, commodities, Bitcoin, Ethereum and US sectors, set against inflation, interest rates, unemployment and recessions. Data refreshed automatically.",
+      },
+      tags: ["Python", "D3.js", "Finance", "Data Viz"],
+      repo: "https://github.com/angelmza1990/market-history",
+      demo: "https://angelmza1990.github.io/market-history/",
+    },
+    {
       title: { es: "LLM desde cero", en: "LLM from Scratch" },
       description: {
         es: "Ejercicios, experimentos y notas basados en el libro Build a Large Language Model (From Scratch) de Sebastian Raschka: implementación paso a paso de un modelo de lenguaje.",
