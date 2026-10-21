@@ -189,6 +189,16 @@ window.CONTENT = {
       demo: "https://angelmza1990.github.io/market-history/",
     },
     {
+      title: { es: "Hold'em Lab", en: "Hold'em Lab" },
+      description: {
+        es: "Herramientas para la matemática del Texas Hold'em: rangos preflop editables, calculadora de equity de manos y rangos (enumeración exacta o Monte Carlo), pot odds, apuestas máximas pagables y sizing de apuestas.",
+        en: "Tools for the math of Texas Hold'em: editable preflop ranges, an equity calculator for hands and ranges (exact enumeration or Monte Carlo), pot odds, the largest callable bet and bet sizing.",
+      },
+      tags: ["JavaScript", "Probability", "Game Theory"],
+      repo: "https://github.com/angelmza1990/holdem-lab",
+      demo: "https://angelmza1990.github.io/holdem-lab/",
+    },
+    {
       title: { es: "LLM desde cero", en: "LLM from Scratch" },
       description: {
         es: "Ejercicios, experimentos y notas basados en el libro Build a Large Language Model (From Scratch) de Sebastian Raschka: implementación paso a paso de un modelo de lenguaje.",
