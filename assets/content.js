@@ -199,6 +199,16 @@ window.CONTENT = {
       demo: "https://angelmza1990.github.io/holdem-lab/",
     },
     {
+      title: { es: "World Atlas", en: "World Atlas" },
+      description: {
+        es: "Población, demografía y economía de 217 países y seis continentes desde 1960: distribución de la población, natalidad, fecundidad, esperanza de vida, pirámides, densidad, superficie y PBI, en mapas, rankings y fichas por país.",
+        en: "Population, demography and economy of 217 countries and six continents since 1960: population distribution, birth rates, fertility, life expectancy, pyramids, density, area and GDP, in maps, rankings and country profiles.",
+      },
+      tags: ["Python", "D3.js", "Demography", "Data Viz"],
+      repo: "https://github.com/angelmza1990/world-atlas",
+      demo: "https://angelmza1990.github.io/world-atlas/",
+    },
+    {
       title: { es: "LLM desde cero", en: "LLM from Scratch" },
       description: {
         es: "Ejercicios, experimentos y notas basados en el libro Build a Large Language Model (From Scratch) de Sebastian Raschka: implementación paso a paso de un modelo de lenguaje.",
