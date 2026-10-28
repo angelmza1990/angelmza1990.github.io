@@ -209,6 +209,16 @@ window.CONTENT = {
       demo: "https://angelmza1990.github.io/world-atlas/",
     },
     {
+      title: { es: "Medical Imaging Lab", en: "Medical Imaging Lab" },
+      description: {
+        es: "Simulaciones interactivas de cómo se forman las imágenes de resonancia magnética y tomografía: ecuaciones de Bloch, contraste de tejidos, k-space, compressed sensing y reconstrucción por retroproyección filtrada, verificadas contra resultados analíticos.",
+        en: "Interactive simulations of how MRI and CT images are made: Bloch equations, tissue contrast, k-space, compressed sensing and filtered back-projection, tested against analytic results.",
+      },
+      tags: ["JavaScript", "Signal Processing", "Inverse Problems", "Medical Imaging"],
+      repo: "https://github.com/angelmza1990/medical-imaging-lab",
+      demo: "https://angelmza1990.github.io/medical-imaging-lab/",
+    },
+    {
       title: { es: "LLM desde cero", en: "LLM from Scratch" },
       description: {
         es: "Ejercicios, experimentos y notas basados en el libro Build a Large Language Model (From Scratch) de Sebastian Raschka: implementación paso a paso de un modelo de lenguaje.",
