@@ -7,19 +7,28 @@
   <meta name="description" content="Angel Villanueva — PhD in Mathematics, data scientist and AI systems developer. Doctor en Matemáticas, científico de datos y desarrollador de sistemas de IA.">
   <meta property="og:title" content="Angel Villanueva">
   <meta property="og:description" content="PhD in Mathematics · Data Scientist · AI Systems Developer">
+  <meta property="og:image" content="https://angelmza1990.github.io/assets/projects/market-history.jpg">
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EAV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    // Tema elegido antes de pintar, para evitar un parpadeo.
+    try { const t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <a class="skip" href="#experience" data-i18n="skip"></a>
   <header class="topbar">
     <nav class="wrap topbar-inner" aria-label="Secciones">
-      <a class="brand" href="#top">AV</a>
+      <a class="brand" href="#top" aria-label="Angel Villanueva">AV</a>
       <ul class="nav-links">
         <li><a href="#experience" data-i18n="nav.experience"></a></li>
         <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#hobbies" data-i18n="nav.hobbies"></a></li>
         <li><a href="#research" data-i18n="nav.research"></a></li>
         <li><a href="#education" data-i18n="nav.education"></a></li>
         <li><a href="#contact" data-i18n="nav.contact"></a></li>
@@ -28,30 +37,46 @@
         <button type="button" data-lang="es">ES</button>
         <button type="button" data-lang="en">EN</button>
       </div>
+      <button type="button" class="theme-toggle" id="theme-toggle">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
     </nav>
   </header>
 
-  <main id="top" class="wrap">
-    <section class="hero">
-      <h1 id="name"></h1>
-      <p class="headline" id="headline"></p>
-      <p class="location" id="location"></p>
-      <p class="summary" id="summary"></p>
-      <div class="cta" id="links"></div>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow" id="location"></p>
+        <h1 id="name"></h1>
+        <p class="headline" id="headline"></p>
+        <p class="summary" id="summary"></p>
+        <div class="cta" id="links"></div>
+      </div>
+      <dl class="facts" id="facts"></dl>
     </section>
 
-    <section id="experience">
-      <h2 data-i18n="nav.experience"></h2>
+    <section id="experience" class="wrap">
+      <header class="section-head"><span class="num">01</span><h2 data-i18n="nav.experience"></h2></header>
       <div id="experience-groups"></div>
     </section>
 
-    <section id="projects">
-      <h2 data-i18n="nav.projects"></h2>
-      <div class="cards" id="project-list"></div>
+    <section id="projects" class="wrap">
+      <span id="hobbies" class="anchor" aria-hidden="true"></span>
+      <header class="section-head">
+        <span class="num">02</span><h2 data-i18n="nav.projects"></h2>
+        <p class="section-sub" data-i18n="projectsSub"></p>
+      </header>
+      <div class="tabs" role="tablist" id="project-tabs">
+        <button type="button" role="tab" id="tab-work" aria-controls="project-list" data-tab="work"></button>
+        <button type="button" role="tab" id="tab-hobby" aria-controls="project-list" data-tab="hobby"></button>
+      </div>
+      <p class="tab-note" id="tab-note"></p>
+      <div class="cards" id="project-list" role="tabpanel"></div>
     </section>
 
-    <section id="research">
-      <h2 data-i18n="nav.research"></h2>
+    <section id="research" class="wrap">
+      <header class="section-head"><span class="num">03</span><h2 data-i18n="nav.research"></h2></header>
       <h3 data-i18n="publications"></h3>
       <ol class="pubs" id="publication-list"></ol>
       <details class="more">
@@ -60,8 +85,8 @@
       </details>
     </section>
 
-    <section id="education">
-      <h2 data-i18n="nav.education"></h2>
+    <section id="education" class="wrap">
+      <header class="section-head"><span class="num">04</span><h2 data-i18n="nav.education"></h2></header>
       <div id="education-list"></div>
       <div class="two-col">
         <div>
@@ -77,15 +102,18 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2 data-i18n="nav.contact"></h2>
-      <p data-i18n="contactText"></p>
-      <div class="cta" id="contact-links"></div>
+    <section id="contact" class="wrap contact">
+      <div class="contact-card">
+        <h2 data-i18n="nav.contact"></h2>
+        <p data-i18n="contactText"></p>
+        <div class="cta" id="contact-links"></div>
+      </div>
     </section>
   </main>
 
   <footer class="wrap footer">
-    <span id="year"></span> · Angel Villanueva
+    <span><span id="year"></span> · Angel Villanueva</span>
+    <a href="https://github.com/angelmza1990/angelmza1990.github.io" target="_blank" rel="noopener" data-i18n="source"></a>
   </footer>
 
   <noscript><p class="wrap">Este sitio necesita JavaScript. / This site requires JavaScript.</p></noscript>

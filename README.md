@@ -10,6 +10,11 @@ versión `es` y `en`. Para sumar un trabajo o un proyecto, copiá un bloque de l
 lista `experience` o `projects` y editalo. Las fechas van como `"AAAA-MM"`, y
 `end: null` significa "actualidad".
 
+Cada proyecto tiene `category`: `"work"` aparece en la pestaña **Ciencia y datos**
+y `"hobby"` en **Hobbies** (el enlace `#hobbies` abre esa pestaña). `image` apunta
+a una captura en [`assets/projects/`](assets/projects/) (800 × 500, JPEG); sin
+imagen, la tarjeta muestra `glyph`.
+
 Los textos fijos de la interfaz (títulos de secciones, botones) están en `UI`
 dentro de [`assets/main.js`](assets/main.js).
 

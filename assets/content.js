@@ -18,6 +18,9 @@ window.CONTENT = {
     en: "Mathematician and data scientist with over 10 years of combined experience in university teaching, academic research and applied data science. I currently build software for artificial intelligence systems, and previously led a team at Scale AI producing high-quality training data for language models. I enjoy turning rigorous theory into practical solutions.",
   },
 
+  // Años de experiencia que muestra la portada (coincide con el resumen).
+  experienceYears: 10,
+
   links: {
     linkedin: "https://www.linkedin.com/in/villanuevaangel",
     github: "https://github.com/angelmza1990",
@@ -176,65 +179,92 @@ window.CONTENT = {
     },
   ],
 
-  // Proyectos personales. `tags` son tecnologías; `repo` y `demo` son opcionales.
+  // Proyectos personales. `category` es "work" (ciencia y datos) o "hobby";
+  // `image` es una captura en assets/projects/; `repo` y `demo` son opcionales.
   projects: [
     {
+      category: "work",
       title: { es: "Market History", en: "Market History" },
       description: {
-        es: "Historia de largo plazo de los mercados y la economía: rendimientos año por año de los principales índices, bonos, commodities, Bitcoin, Ethereum y sectores de EE.UU., contra inflación, tasas, desempleo y recesiones. Datos actualizados automáticamente.",
-        en: "A long-run history of markets and the economy: calendar-year returns for major indices, bonds, commodities, Bitcoin, Ethereum and US sectors, set against inflation, interest rates, unemployment and recessions. Data refreshed automatically.",
+        es: "Historia de largo plazo de los mercados y la economía: rendimientos año por año de índices, bonos, commodities, cripto y sectores de EE.UU., valuación de cada empresa del S&P 500 y el ciclo económico. Datos actualizados automáticamente.",
+        en: "A long-run history of markets and the economy: year-by-year returns for indices, bonds, commodities, crypto and US sectors, the valuation of every S&P 500 company and the economic cycle. Data refreshed automatically.",
       },
-      tags: ["Python", "D3.js", "Finance", "Data Viz"],
+      tags: ["Python", "D3.js", "Finance", "ETL"],
+      image: "assets/projects/market-history.jpg",
       repo: "https://github.com/angelmza1990/market-history",
       demo: "https://angelmza1990.github.io/market-history/",
     },
     {
-      title: { es: "Hold'em Lab", en: "Hold'em Lab" },
-      description: {
-        es: "Herramientas para la matemática del Texas Hold'em: rangos preflop editables, calculadora de equity de manos y rangos (enumeración exacta o Monte Carlo), pot odds, apuestas máximas pagables y sizing de apuestas.",
-        en: "Tools for the math of Texas Hold'em: editable preflop ranges, an equity calculator for hands and ranges (exact enumeration or Monte Carlo), pot odds, the largest callable bet and bet sizing.",
-      },
-      tags: ["JavaScript", "Probability", "Game Theory"],
-      repo: "https://github.com/angelmza1990/holdem-lab",
-      demo: "https://angelmza1990.github.io/holdem-lab/",
-    },
-    {
-      title: { es: "World Atlas", en: "World Atlas" },
-      description: {
-        es: "Población, demografía y economía de 217 países y seis continentes desde 1960: distribución de la población, natalidad, fecundidad, esperanza de vida, pirámides, densidad, superficie y PBI, en mapas, rankings y fichas por país.",
-        en: "Population, demography and economy of 217 countries and six continents since 1960: population distribution, birth rates, fertility, life expectancy, pyramids, density, area and GDP, in maps, rankings and country profiles.",
-      },
-      tags: ["Python", "D3.js", "Demography", "Data Viz"],
-      repo: "https://github.com/angelmza1990/world-atlas",
-      demo: "https://angelmza1990.github.io/world-atlas/",
-    },
-    {
+      category: "work",
       title: { es: "Medical Imaging Lab", en: "Medical Imaging Lab" },
       description: {
         es: "Simulaciones interactivas de cómo se forman las imágenes de resonancia magnética y tomografía: ecuaciones de Bloch, contraste de tejidos, k-space, compressed sensing y reconstrucción por retroproyección filtrada, verificadas contra resultados analíticos.",
         en: "Interactive simulations of how MRI and CT images are made: Bloch equations, tissue contrast, k-space, compressed sensing and filtered back-projection, tested against analytic results.",
       },
-      tags: ["JavaScript", "Signal Processing", "Inverse Problems", "Medical Imaging"],
+      tags: ["JavaScript", "Signal Processing", "Inverse Problems"],
+      image: "assets/projects/medical-imaging-lab.jpg",
       repo: "https://github.com/angelmza1990/medical-imaging-lab",
       demo: "https://angelmza1990.github.io/medical-imaging-lab/",
     },
     {
+      category: "work",
+      title: { es: "World Atlas", en: "World Atlas" },
+      description: {
+        es: "Población, demografía y economía de 217 países y seis continentes desde 1960: distribución de la población, natalidad, fecundidad, esperanza de vida, pirámides, densidad, superficie y PBI, en mapas, rankings y fichas por país.",
+        en: "Population, demography and economy of 217 countries and six continents since 1960: population distribution, birth rates, fertility, life expectancy, pyramids, density, area and GDP, in maps, rankings and country profiles.",
+      },
+      tags: ["Python", "D3.js", "Demography"],
+      image: "assets/projects/world-atlas.jpg",
+      repo: "https://github.com/angelmza1990/world-atlas",
+      demo: "https://angelmza1990.github.io/world-atlas/",
+    },
+    {
+      category: "work",
       title: { es: "LLM desde cero", en: "LLM from Scratch" },
       description: {
         es: "Ejercicios, experimentos y notas basados en el libro Build a Large Language Model (From Scratch) de Sebastian Raschka: implementación paso a paso de un modelo de lenguaje.",
         en: "Exercises, experiments and notes based on Sebastian Raschka's book Build a Large Language Model (From Scratch): a step-by-step implementation of a language model.",
       },
       tags: ["Python", "LLMs"],
+      image: null,
+      glyph: "∑",
       repo: "https://github.com/angelmza1990/LLM-from-scratch---exercises",
       demo: null,
     },
     {
+      category: "hobby",
+      title: { es: "Sports Stats", en: "Sports Stats" },
+      description: {
+        es: "Infografías interactivas sobre los grandes campeones y rivalidades del deporte: tenis, fútbol, Juegos Olímpicos, NBA, NFL, NHL, MLB, Fórmula 1, ajedrez y más, con datos abiertos que se actualizan solos dos veces por año.",
+        en: "Interactive infographics on sport's great champions and rivalries: tennis, football, the Olympic Games, the NBA, NFL, NHL, MLB, Formula 1, chess and more, from open data refreshed twice a year.",
+      },
+      tags: ["Python", "D3.js", "Sports", "Open data"],
+      image: "assets/projects/sports-stats.jpg",
+      repo: "https://github.com/angelmza1990/sports-stats-mvp",
+      demo: "https://angelmza1990.github.io/sports-stats-mvp/",
+    },
+    {
+      category: "hobby",
+      title: { es: "Hold'em Lab", en: "Hold'em Lab" },
+      description: {
+        es: "Herramientas para la matemática del Texas Hold'em: rangos preflop editables, calculadora de equity de manos y rangos (enumeración exacta o Monte Carlo), pot odds, apuestas máximas pagables y sizing de apuestas.",
+        en: "Tools for the math of Texas Hold'em: editable preflop ranges, an equity calculator for hands and ranges (exact enumeration or Monte Carlo), pot odds, the largest callable bet and bet sizing.",
+      },
+      tags: ["JavaScript", "Probability", "Game Theory"],
+      image: "assets/projects/holdem-lab.jpg",
+      repo: "https://github.com/angelmza1990/holdem-lab",
+      demo: "https://angelmza1990.github.io/holdem-lab/",
+    },
+    {
+      category: "hobby",
       title: { es: "Bar chart race: campeones de poker", en: "Poker champions bar chart race" },
       description: {
         es: "Visualización animada de los campeonatos de poker ganados por cada jugador a lo largo del tiempo.",
         en: "Animated visualization of poker championships won by each player over time.",
       },
       tags: ["Python", "Data Viz"],
+      image: null,
+      glyph: "♠",
       repo: "https://github.com/angelmza1990/Bar-chart-race-poker",
       demo: null,
     },
