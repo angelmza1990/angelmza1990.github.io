@@ -186,8 +186,8 @@ window.CONTENT = {
       category: "work",
       title: { es: "Market History", en: "Market History" },
       description: {
-        es: "Historia de largo plazo de los mercados y la economía: rendimientos año por año de índices, bonos, commodities, cripto y sectores de EE.UU., valuación de cada empresa del S&P 500 y el ciclo económico. Datos actualizados automáticamente.",
-        en: "A long-run history of markets and the economy: year-by-year returns for indices, bonds, commodities, crypto and US sectors, the valuation of every S&P 500 company and the economic cycle. Data refreshed automatically.",
+        es: "Historia de largo plazo de los mercados y la economía: rendimientos año por año de índices, bonos, commodities, cripto y sectores de EE.UU., valuación de cada empresa del S&P 500, estacionalidad mes a mes y el ciclo económico. Datos actualizados automáticamente.",
+        en: "A long-run history of markets and the economy: year-by-year returns for indices, bonds, commodities, crypto and US sectors, the valuation of every S&P 500 company, month-by-month seasonality and the economic cycle. Data refreshed automatically.",
       },
       tags: ["Python", "D3.js", "Finance", "ETL"],
       image: "assets/projects/market-history.jpg",
@@ -198,8 +198,8 @@ window.CONTENT = {
       category: "work",
       title: { es: "Medical Imaging Lab", en: "Medical Imaging Lab" },
       description: {
-        es: "Simulaciones interactivas de cómo se forman las imágenes de resonancia magnética y tomografía: ecuaciones de Bloch, contraste de tejidos, k-space, compressed sensing y reconstrucción por retroproyección filtrada, verificadas contra resultados analíticos.",
-        en: "Interactive simulations of how MRI and CT images are made: Bloch equations, tissue contrast, k-space, compressed sensing and filtered back-projection, tested against analytic results.",
+        es: "Simulaciones interactivas de cómo se forman las imágenes de resonancia magnética y tomografía: ecuaciones de Bloch, contraste de tejidos, k-space, compressed sensing, retroproyección filtrada y segmentación de tejidos, verificadas contra resultados analíticos.",
+        en: "Interactive simulations of how MRI and CT images are made: Bloch equations, tissue contrast, k-space, compressed sensing, filtered back-projection and tissue segmentation, tested against analytic results.",
       },
       tags: ["JavaScript", "Signal Processing", "Inverse Problems"],
       image: "assets/projects/medical-imaging-lab.jpg",
@@ -210,8 +210,8 @@ window.CONTENT = {
       category: "work",
       title: { es: "World Atlas", en: "World Atlas" },
       description: {
-        es: "Población, demografía y economía de 217 países y seis continentes desde 1960: distribución de la población, natalidad, fecundidad, esperanza de vida, pirámides, densidad, superficie y PBI, en mapas, rankings y fichas por país.",
-        en: "Population, demography and economy of 217 countries and six continents since 1960: population distribution, birth rates, fertility, life expectancy, pyramids, density, area and GDP, in maps, rankings and country profiles.",
+        es: "Población, demografía y economía de 217 países y seis continentes desde 1960: distribución de la población, natalidad, fecundidad, esperanza de vida, pirámides, densidad, superficie y PBI, en mapas, rankings, fichas por país y una vista de cómo cambió cada país desde 1960.",
+        en: "Population, demography and economy of 217 countries and six continents since 1960: population distribution, birth rates, fertility, life expectancy, pyramids, density, area and GDP, in maps, rankings, country profiles and a view of how each country changed since 1960.",
       },
       tags: ["Python", "D3.js", "Demography"],
       image: "assets/projects/world-atlas.jpg",
@@ -247,8 +247,8 @@ window.CONTENT = {
       category: "hobby",
       title: { es: "Hold'em Lab", en: "Hold'em Lab" },
       description: {
-        es: "Herramientas para la matemática del Texas Hold'em: rangos preflop editables, calculadora de equity de manos y rangos (enumeración exacta o Monte Carlo), pot odds, apuestas máximas pagables y sizing de apuestas.",
-        en: "Tools for the math of Texas Hold'em: editable preflop ranges, an equity calculator for hands and ranges (exact enumeration or Monte Carlo), pot odds, the largest callable bet and bet sizing.",
+        es: "Herramientas para la matemática del Texas Hold'em: rangos preflop editables, calculadora de equity de manos y rangos (enumeración exacta o Monte Carlo), pot odds, sizing de apuestas y un entrenador de decisiones con la matemática exacta.",
+        en: "Tools for the math of Texas Hold'em: editable preflop ranges, an equity calculator for hands and ranges (exact enumeration or Monte Carlo), pot odds, bet sizing and a trainer that scores your decisions against the exact math.",
       },
       tags: ["JavaScript", "Probability", "Game Theory"],
       image: "assets/projects/holdem-lab.jpg",
