@@ -9,13 +9,13 @@
 window.CONTENT = {
   name: "Angel Villanueva",
   headline: {
-    es: "Doctor en Matemáticas · Científico de Datos · Desarrollador de sistemas de IA",
-    en: "PhD in Mathematics · Data Scientist · AI Systems Developer",
+    es: "Doctor en Matemáticas · Human Data Manager · Ciencia de datos e IA",
+    en: "PhD in Mathematics · Human Data Manager · Data Science & AI",
   },
   location: { es: "Mendoza, Argentina", en: "Mendoza, Argentina" },
   summary: {
-    es: "Matemático y científico de datos con más de 10 años de experiencia combinando docencia universitaria, investigación académica y ciencia de datos aplicada. Hoy desarrollo software para sistemas de inteligencia artificial, y antes lideré un equipo en Scale AI dedicado a producir datos de entrenamiento de alta calidad para modelos de lenguaje. Me apasiona traducir teoría rigurosa en soluciones prácticas.",
-    en: "Mathematician and data scientist with over 10 years of combined experience in university teaching, academic research and applied data science. I currently build software for artificial intelligence systems, and previously led a team at Scale AI producing high-quality training data for language models. I enjoy turning rigorous theory into practical solutions.",
+    es: "Matemático y científico de datos con más de 10 años de experiencia combinando docencia universitaria, investigación académica y ciencia de datos aplicada. Hoy soy Human Data Manager en micro1, donde lidero equipos y proyectos que producen datos de entrenamiento para modelos de IA, y antes lideré equipos de desarrollo en Scale AI dedicados a mejorar datos y rendimiento de modelos de lenguaje. Me apasiona traducir teoría rigurosa en soluciones prácticas.",
+    en: "Mathematician and data scientist with over 10 years of combined experience in university teaching, academic research and applied data science. I am currently a Human Data Manager at micro1, leading teams and projects that produce training data for AI models, and previously led development teams at Scale AI improving training data and the performance of language models. I enjoy turning rigorous theory into practical solutions.",
   },
 
   // Años de experiencia que muestra la portada (coincide con el resumen).
@@ -34,10 +34,27 @@ window.CONTENT = {
   experience: [
     {
       group: "industry",
+      role: { es: "Human Data Manager", en: "Human Data Manager" },
+      org: "micro1",
+      location: { es: "San Francisco, EE.UU. · Remoto", en: "San Francisco, USA · Remote" },
+      start: "2026-08", end: null,
+      bullets: [
+        {
+          es: "Liderazgo de equipos y proyectos que producen datos de entrenamiento para modelos de IA.",
+          en: "Lead teams and projects that produce training data for AI models.",
+        },
+        {
+          es: "Diseño de pipelines y métricas para medir y mejorar los procesos de esos equipos.",
+          en: "Design pipelines and metrics to measure and improve those teams' processes.",
+        },
+      ],
+    },
+    {
+      group: "industry",
       role: { es: "Desarrollador de Software (Sistemas de IA)", en: "Software Developer (AI Systems)" },
       org: "micro1",
       location: { es: "San Francisco, EE.UU. · Remoto", en: "San Francisco, USA · Remote" },
-      start: "2025-11", end: null,
+      start: "2025-11", end: "2026-08",
       bullets: [],
     },
     {
@@ -48,8 +65,8 @@ window.CONTENT = {
       start: "2025-02", end: "2025-11",
       bullets: [
         {
-          es: "Liderazgo de un equipo de desarrollo dedicado a producir datos de entrenamiento de alta calidad para modelos de lenguaje.",
-          en: "Led a development team producing high-quality training data for large language models.",
+          es: "Liderazgo de equipos de desarrollo dedicados a producir datos de entrenamiento de alta calidad y a mejorar el rendimiento de modelos de IA.",
+          en: "Led development teams producing high-quality training data and improving the performance of AI models.",
         },
         {
           es: "Aplicación de razonamiento matemático en tareas de evaluación STEM.",
@@ -63,7 +80,12 @@ window.CONTENT = {
       org: "Scale AI",
       location: { es: "San Francisco, EE.UU. · Remoto", en: "San Francisco, USA · Remote" },
       start: "2023-08", end: "2025-03",
-      bullets: [],
+      bullets: [
+        {
+          es: "Mejora y clasificación de datos de entrenamiento para modelos de IA en múltiples lenguajes: Python, SQL, Java, Swift y Kotlin.",
+          en: "Improved and classified training data for AI models across multiple languages: Python, SQL, Java, Swift and Kotlin.",
+        },
+      ],
     },
     {
       group: "industry",
@@ -71,7 +93,12 @@ window.CONTENT = {
       org: "Quinto Impacto",
       location: { es: "Argentina", en: "Argentina" },
       start: "2023-06", end: "2023-08",
-      bullets: [],
+      bullets: [
+        {
+          es: "Desarrollo de servicios en Python y Java para el sitio web de BYMA (Bolsas y Mercados Argentinos).",
+          en: "Built Python and Java services for the website of BYMA (Bolsas y Mercados Argentinos, the Argentine stock exchange).",
+        },
+      ],
     },
     {
       group: "industry",
@@ -352,8 +379,8 @@ window.CONTENT = {
   ],
 
   skills: [
-    { label: { es: "Programación", en: "Programming" }, items: ["Python", "SQL", "JavaScript", "Git", "Linux"] },
-    { label: { es: "Datos e IA", en: "Data & AI" }, items: ["Machine Learning", "pandas", "scikit-learn", "ETL", "Power BI", "SSIS", { es: "Datos de entrenamiento para LLMs", en: "LLM training data" }] },
+    { label: { es: "Programación", en: "Programming" }, items: ["Python", "SQL", "Java", "JavaScript", "Swift", "Kotlin", "Git", "Linux"] },
+    { label: { es: "Datos e IA", en: "Data & AI" }, items: ["Machine Learning", "pandas", "scikit-learn", "ETL", "Power BI", "SSIS", { es: "Datos de entrenamiento para LLMs", en: "LLM training data" }, { es: "Liderazgo de equipos", en: "Team leadership" }, { es: "Métricas y pipelines de calidad de datos", en: "Data quality metrics & pipelines" }] },
     { label: { es: "Matemática", en: "Mathematics" }, items: [
       { es: "Teoría de Números", en: "Number Theory" },
       { es: "Geometría Algebraica", en: "Algebraic Geometry" },
