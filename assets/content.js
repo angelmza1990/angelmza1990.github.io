@@ -223,6 +223,18 @@ window.CONTENT = {
     },
     {
       category: "work",
+      title: { es: "Argentina en números", en: "Argentina in Numbers" },
+      description: {
+        es: "La economía argentina en datos, actualizada cada semana: inflación desde 1943, todos los dólares, reservas, riesgo país, actividad, empleo, pobreza, salarios reales, la economía de cada presidencia desde 1983 y calculadoras para tus pesos, tu sueldo y tus ahorros.",
+        en: "Argentina's economy in data, refreshed every week: inflation since 1943, every dollar rate, reserves, country risk, activity, jobs, poverty, real wages, the economy under each president since 1983 and calculators for your pesos, salary and savings.",
+      },
+      tags: ["Python", "D3.js", "Economics", "Open data"],
+      image: "assets/projects/argentina-in-numbers.jpg",
+      repo: "https://github.com/angelmza1990/argentina-in-numbers",
+      demo: "https://angelmza1990.github.io/argentina-in-numbers/",
+    },
+    {
+      category: "work",
       title: { es: "Medical Imaging Lab", en: "Medical Imaging Lab" },
       description: {
         es: "Simulaciones interactivas de cómo se forman las imágenes de resonancia magnética y tomografía: ecuaciones de Bloch, contraste de tejidos, k-space, compressed sensing, retroproyección filtrada y segmentación de tejidos, verificadas contra resultados analíticos.",
